@@ -11,3 +11,16 @@ export const CardStyled = styled.div`
     display: flex;
     flex-direction: column; 
 `
+
+export const NavStyle = styled.img`
+    width: 25px;
+    height: 25px;
+`
+
+export const MenuStyle = styled.div`
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: red solid 2px;
+`
