@@ -1,11 +1,13 @@
 import React from 'react'
 import {CardStyled} from './styled'
+import Signo from './../../components/TitleSigno'
+import Text from './../../components/DescriptionSigno'
 
 export default () => {
     return (
         <CardStyled>
-            <p1>Hello world</p1>
-            <p1>Hello world</p1>
+            <Signo signo='ÁRIES' />
+            <Text text='É isso mesmo, vamo testar esse negocio' />
         </CardStyled>
     )
 }
