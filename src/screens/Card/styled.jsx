@@ -42,3 +42,9 @@ export const MenuStyle = styled.div`
     align-items: center;
     justify-content: space-between;
 `
+
+export const LoadingStyled = styled.img`
+    width: 100px;
+    height: 100px;
+    margin-top: 100%;
+`

@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import {CardStyled, NavStyle, MenuStyle} from './styled'
+import {CardStyled, NavStyle, MenuStyle, LoadingStyled} from './styled'
 import Signo from './../../components/TitleSigno'
 import Text from './../../components/DescriptionSigno'
 import nextImg from './../../images/next.png'
 import backImg from './../../images/back.png'
 import api from './../../services/api'
+import load from './../../images/loading.gif'
 
 export default () => {
     const [signs, setSigns] = useState([])
@@ -51,7 +52,11 @@ export default () => {
     }, [count])
 
     if(isLoader) {
-        return <div>Carregando...</div>
+        return (
+            <div>
+                <LoadingStyled src={load} />
+            </div>
+        )
     }
 
     return (
