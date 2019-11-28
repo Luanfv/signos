@@ -18,6 +18,7 @@ export default () => {
             setSigns(res.data)
             setCurrent(res.data[count])
             setIsLoader(false)
+            console.log(res.data)
         })
         .catch(e => {
             alert('ERRO DE CONEXÃO')
@@ -58,10 +59,10 @@ export default () => {
         <CardStyled>
             <MenuStyle>
                 <NavStyle src={backImg} alt='img' onClick={() => back(count - 1)} />
-                <Signo signo={current.description} />
+                <Signo signo={current.description} id={current.id} />
                 <NavStyle src={nextImg} alt='img' onClick={() => next(count + 1)} />
             </MenuStyle>
-            
+
             <Text text={current.predictions[current.predictions.length - 1].description} />
         </CardStyled>
     )
