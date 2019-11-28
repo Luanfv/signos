@@ -4,6 +4,7 @@ export const CardStyled = styled.div`
     max-width: 330px;
     min-height: 340px;
     padding: 25px;
+    margin-top: 20px;
     border: #f9b502 solid 3px;
     border-radius: 5px;
     background: #fbf5c8;

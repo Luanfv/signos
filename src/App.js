@@ -1,8 +1,14 @@
 import React from 'react';
 import Card from './screens/Card'
+import {MainStyled, TitleStyled} from './styled'
 
 export default () => {
   return (
-    <Card />
+    <MainStyled>
+      <TitleStyled>
+        Signos
+      </TitleStyled>
+      <Card />
+    </MainStyled>
   )
 }
