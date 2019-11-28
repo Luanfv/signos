@@ -61,6 +61,7 @@ export default () => {
                 <Signo signo={current.description} />
                 <NavStyle src={nextImg} alt='img' onClick={() => next(count + 1)} />
             </MenuStyle>
+            
             <Text text={current.predictions[current.predictions.length - 1].description} />
         </CardStyled>
     )

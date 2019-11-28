@@ -4,6 +4,6 @@ import {TitleStyled, ImgStyled, MainStyled} from './styled'
 export default (props) => (
     <MainStyled>
         <ImgStyled />
-        <TitleStyled>{props.signo}</TitleStyled>
+        <TitleStyled>{props.signo.toUpperCase()}</TitleStyled>
     </MainStyled>
 )

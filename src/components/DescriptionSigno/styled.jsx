@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const DescriptionStyled = styled.p`
-    width: 100%;
+    
     height: 100%;
-    border: red solid 2px;
+    margin: 18px;
     text-align: justify;
+    font-size: 18px;
 `
