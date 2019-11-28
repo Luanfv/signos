@@ -3,7 +3,7 @@ import {TitleStyled, ImgStyled, MainStyled} from './styled'
 
 export default (props) => (
     <MainStyled>
-        <ImgStyled></ImgStyled>
+        <ImgStyled />
         <TitleStyled>{props.signo}</TitleStyled>
     </MainStyled>
 )

@@ -15,6 +15,10 @@ export const CardStyled = styled.div`
 export const NavStyle = styled.img`
     width: 25px;
     height: 25px;
+
+    :hover {
+        cursor: pointer;
+    }
 `
 
 export const MenuStyle = styled.div`
