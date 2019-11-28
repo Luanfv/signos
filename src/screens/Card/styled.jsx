@@ -11,6 +11,20 @@ export const CardStyled = styled.div`
 
     display: flex;
     flex-direction: column; 
+
+    @media only screen and (max-width: 365px) {
+        min-height: 360px;
+    }
+
+    @media only screen and (max-width: 350px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media only screen and (max-width: 310px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 `
 
 export const NavStyle = styled.img`
