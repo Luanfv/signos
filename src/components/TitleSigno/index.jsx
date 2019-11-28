@@ -1,17 +1,17 @@
 import React, {useState, useEffect} from 'react'
 import {TitleStyled, ImgStyled, MainStyled} from './styled'
 import aries from './../../images/aries.png'
-import touro from './../../images/touro.png'
-import gemeos from './../../images/gemeos.png'
+import bull from './../../images/bull.png'
+import gemini from './../../images/gemini.png'
 import cancer from './../../images/cancer.png'
-import leao from './../../images/leao.png'
-import virgem from './../../images/virgem.png'
-import libra from './../../images/libra.png'
-import escorpiao from './../../images/escorpiao.png'
-import sagitario from './../../images/sagitario.png'
-import capricornio from './../../images/capricornio.png'
-import aquarios from './../../images/aquarios.png'
-import peixes from './../../images/peixes.png'
+import lion from './../../images/lion.png'
+import virgin from './../../images/virgin.png'
+import pound from './../../images/pound.png'
+import scorpio from './../../images/scorpio.png'
+import sagittarius from './../../images/sagittarius.png'
+import capricorn from './../../images/capricorn.png'
+import aquariums from './../../images/aquariums.png'
+import pisces from './../../images/pisces.png'
 
 export default (props) => {
     const {signo, id} = props
@@ -23,38 +23,41 @@ export default (props) => {
                 setImg(aries)
                 break
             case 2:
-                setImg(touro)
+                setImg(bull)
                 break
             case 3:
-                setImg(gemeos)
+                setImg(gemini)
                 break
             case 4:
                 setImg(cancer)
                 break
             case 5:
-                setImg(leao)
+                setImg(lion)
                 break
             case 6:
-                setImg(virgem)
+                setImg(virgin)
                 break
             case 7:
-                setImg(libra)
+                setImg(pound)
                 break
             case 8:
-                setImg(escorpiao)
+                setImg(scorpio)
                 break
             case 9:
-                setImg(sagitario)
+                setImg(sagittarius)
                 break
             case 10:
-                setImg(capricornio)
+                setImg(capricorn)
                 break
             case 11:
-                setImg(aquarios)
+                setImg(aquariums)
                 break
             case 12:
-                setImg(peixes)
+                setImg(pisces)
                 break
+            default:
+                break
+                
         }
     }, [props.id])
 

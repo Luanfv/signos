@@ -18,7 +18,6 @@ export default () => {
             setSigns(res.data)
             setCurrent(res.data[count])
             setIsLoader(false)
-            console.log(res.data)
         })
         .catch(e => {
             alert('ERRO DE CONEXÃO')
